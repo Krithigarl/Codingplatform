@@ -1,0 +1,27 @@
+/* Theming */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --bs-primary:#FF8300;
+    --bs-secondary:#000000;
+}
+body{
+    background-color: var(--bs-secondary);
+    font-family:'Poppins',sans-serif;
+    color: white;
+}
+/* button design */
+.login-btn{
+    background-color: var(--bs-primary);
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px #FF8300;
+    width: 150px;
+}
+.login-btn:hover{
+    background-color: #f6932a;
+}
+/* heading */
+.heading-h1{
+    color: #FF8300;
+    font-size: 22px;
+}

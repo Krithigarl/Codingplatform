@@ -1,0 +1,156 @@
+/* Navigation */
+.heading{
+    color: #FF8300;
+}
+.nav-pages{
+    margin-left: 30%;
+}
+.navigation{
+    position: sticky;
+    top:0%;
+    background-color: #000000;
+    z-index: 1000;
+}
+/* Hero Section */
+#home{
+    background: linear-gradient(90deg,#000000,#111111,#ff8c00);
+    padding: 4% 0 5% 0;
+}
+.hero-content{
+    margin-top: 10%;
+}
+.hero-content h1{
+ width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #4F46E5;
+    animation: typing 5s steps(20, end) infinite,
+               blink 0.8s infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.hero-content p{
+    text-align: justify;
+}
+/* ABOUT SECTION */
+.about{
+    border: 2px solid #FF8300;
+    padding: 3%;   
+}
+.about-content h2{
+    text-align: center; 
+    margin-bottom: 4%;
+}
+.about-content p{
+    text-align: justify;
+    text-indent: 10px;
+    margin-left: 2%;
+}
+.about-content Button{
+    margin-left: 40%;
+}
+/* FEATURE SECTION */
+.card-bg{
+    background-color: #000000;
+    color: white;
+    border: 1px solid #FF8300;
+    margin-bottom: 9%;
+    box-shadow: 2px 2px 2px #FF8300;
+    transition: transform 0.3s;
+}
+.card-bg:hover{
+    transform: scale(1.1);
+    background-color: #FF8300;
+}
+.icon:hover{
+    color: white;
+}
+.icon{
+    font-size: 70px;
+    text-align: center;
+    color: #FF8300;
+}
+/* Programming Course */
+.card-one{
+    position: relative;
+}
+.programming-content{
+    border-radius:20% 0 20% 0;
+    margin-bottom: 25%;
+    padding-top: 15%;
+    background-color: #000000;
+    border: 2px solid #FF8300;
+    color: white;
+}
+.card-course{
+    width: 80px;
+    position: absolute;
+    z-index: 200;
+    bottom: 80%;
+    left: 30%;
+    background-color: black;
+    /* transform: rotate(50deg); */
+}
+/* Testimonial */
+#testimonials{
+    padding:60px 0;
+}
+
+.carousel-card{
+    max-width:900px;
+    margin:auto;
+    background:#FF8300;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.testimonial-img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.stars{
+    font-size:20px;
+    color:#ffc107;
+}
+/* CONTACT US */
+#contact{
+    background:#060606;
+    padding:80px 0;
+}
+
+#contact h3{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+#contact p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+#contact .form-control{
+    border-radius:10px;
+    padding:12px;
+}
+
+#contact .form-control:focus{
+    box-shadow:none;
+    border:2px solid #4F46E5;
+}
