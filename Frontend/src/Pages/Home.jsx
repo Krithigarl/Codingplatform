@@ -18,7 +18,9 @@ import user1 from '../assets/user1.jpg'
 import user2 from '../assets/user2.jpg'
 import user3 from '../assets/user3.jpg'
 import user4 from '../assets/user4.jpg'
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+    const navigate = useNavigate()
     const feature = [{ id: 101, icon: <i class="uil uil-robot"></i>, title: "AI Mentor", description: "Get instant AI-powered guidance to understand programming concepts " },
     { id: 102, icon: <i class="uil uil-desktop"></i>, title: "Online Compiler", description: "Write, run, and test your code directly in the browser without installing any software." },
     { id: 103, icon: <i class="uil uil-book-open"></i>, title: "Programming Coures", description: "Learn programming courses designed for beginners and advanced learners." },
@@ -56,7 +58,7 @@ const Home = () => {
                                 <Nav.Link href="#contact" className='text-white'>Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
-                        <Button className='login-btn'>Login</Button>
+                        <Button className='login-btn' onClick={()=>navigate('/login')}>Login</Button>
                     </Container>
                 </Navbar>
                 {/* Hero Section */}
